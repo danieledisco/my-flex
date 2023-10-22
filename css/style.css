@@ -25,6 +25,7 @@ a
 .container
 {
         width: 80%;
+        height: 500px;
         max-width: 1152px;
         margin: auto;
         border: 3px solid red;
@@ -63,7 +64,7 @@ ul
         font-size: 1rem;
         text-align: center;
         width: 5rem;
-        aspect-ratio: 1;
+        height: 5rem;
         border: 1px solid black;
         padding: 2rem;
         margin: 1rem; 
@@ -95,7 +96,12 @@ hr
 /* #endregion Common */
 
 /* #region Utility */
+.width-10
+{
+        width: 10%
+}
 
+/* justify-content */
 .justify-content-start
 {
         justify-content: flex-start;
@@ -120,6 +126,73 @@ hr
 {
         justify-content: space-evenly;
 }
+
+/* align-content */
+.align-content-start
+{
+        align-content: flex-start;
+}
+
+.align-content-end
+{
+        align-content: flex-end;
+}
+
+.align-content-center
+{
+        align-content: center;
+}
+
+.align-content-stretch
+{
+        align-content: stretch;
+}
+
+.align-content-space-between
+{
+        align-content: space-between;
+}
+
+.align-content-space-around
+{
+        align-content: space-around;
+}
+
+.align-content-space-evenly
+{
+        align-content: space-evenly;
+}
+
+/* align-items */
+.align-items-start
+{
+        align-items: flex-start;
+}
+
+.align-items-end
+{
+        align-items: flex-end;
+}
+
+.align-items-center
+{
+        align-items: center;
+}
+
+.align-items-stretch
+{
+        align-items: stretch;
+}
+
+.aligne-items-baseline
+{
+        align-items: baseline;
+}
+
+
+
+
+
 .row-reverse
 {
         flex-direction: row-reverse;
@@ -200,16 +273,9 @@ hr
         align-content: center;
 }
 
-.flex-flow-row-wrap
+.flex-wrap-wrap
 {
-        flex-flow: row wrap;
-}
-break
-{
-        flex-basis: 100%;
-        width: 0px; 
-        height: 0px; 
-        overflow: hidden;
+        flex-wrap: wrap;
 }
 
 /* #endregion Utility */
@@ -233,6 +299,11 @@ break
 {
         padding-top: 1rem;
         padding-bottom: 1rem;
+}
+
+#header .container
+{
+        height: 160px;
 }
 
 /* #endregion Header */
